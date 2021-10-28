@@ -1,10 +1,9 @@
 import './App.css';
+import DrumMachine from './DrumMachine';
 
 function App() {
   return (
-    <div className="App">
-      WELCOME TO THE DRUM MACHINE
-    </div>
+    <DrumMachine/>
   );
 }
 

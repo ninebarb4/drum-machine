@@ -1,9 +1,15 @@
 #drum-pad-wrapper {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-gap: 10px;
     height: 90%;
+    padding: 10px;
 }
 
 .drum-pad {
-    border: solid red 1px;
+    border: 3px inset #eb351c;
+    text-align: center;
+    font-size: 2rem;
+    background-image: linear-gradient(to right bottom, #000206, #191e20, #2b3433, #434b46, #5f6259);
+    color: white;
 }

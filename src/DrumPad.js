@@ -1,4 +1,5 @@
 import React from 'react'
+import './drumPad.css';
 
 export default function DrumPad() {
     return (

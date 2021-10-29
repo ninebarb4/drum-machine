@@ -1,0 +1,9 @@
+#drum-pad-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 90%;
+}
+
+.drum-pad {
+    border: solid red 1px;
+}

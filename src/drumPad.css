@@ -7,6 +7,9 @@
 }
 
 .drum-pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 3px inset #eb351c;
     text-align: center;
     font-size: 2rem;

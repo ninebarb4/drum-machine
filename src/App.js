@@ -1,9 +1,13 @@
 import './App.css';
 import DrumMachine from './DrumMachine';
+import ReactFCCtest from 'react-fcctest';
 
 function App() {
   return (
-    <DrumMachine/>
+    <div>
+      <ReactFCCtest />
+      <DrumMachine/>
+    </div>
   );
 }
 

@@ -10,8 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px inset #eb351c;
-    text-align: center;
+    border: 1px inset #eb351c;
     font-size: 2rem;
     background-image: linear-gradient(to right bottom, #000206, #191e20, #2b3433, #434b46, #5f6259);
     color: white;

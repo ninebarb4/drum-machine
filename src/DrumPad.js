@@ -118,7 +118,7 @@ const bankTwo = [
 export default function DrumPad(props) {
     return (
         bankOne.map(element => {
-          return <button className="drum-pad" id={element.id} onClick={props.playAudio}>{element.keyTrigger}
+          return <button className="drum-pad" id={element.id} onClick={() => props.playAudio(element.keyTrigger)}>{element.keyTrigger}
                     <audio src={element.url} className="clip" id={element.keyTrigger}></audio>
                 </button>
         })

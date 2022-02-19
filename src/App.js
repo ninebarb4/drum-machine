@@ -1,12 +1,17 @@
-import './App.css';
+//import './App.css';
 import DrumMachine from './DrumMachine';
 import ReactFCCtest from 'react-fcctest';
 
 function App() {
+
+  const playAudio = (key) => {
+    console.log("you clicked me")
+
+  }
   return (
     <div>
       <ReactFCCtest />
-      <DrumMachine/>
+      <DrumMachine playAudio={playAudio}/>
     </div>
   );
 }

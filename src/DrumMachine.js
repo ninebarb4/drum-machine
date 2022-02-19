@@ -7,6 +7,8 @@ export default function DrumMachine() {
     return (
         <div id="drum-machine">
             <DrumPad />
+            <div id="display">
+            </div>
         </div>
     )
 }

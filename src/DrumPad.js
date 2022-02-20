@@ -1,4 +1,5 @@
 import React from 'react'
+import KeypadKey from './KeypadKey';
 //import './drumPad.css';
 
 const bankOne = [
@@ -116,12 +117,9 @@ const bankTwo = [
 ];
 
 export default function DrumPad(props) {
-    return (
-        bankOne.map(element => {
-          return <button className="drum-pad" id={element.id} onClick={() => props.playAudio(element.keyTrigger)}>{element.keyTrigger}
-                    <audio src={element.url} className="clip" id={element.keyTrigger}></audio>
-                </button>
-        })
+    return bankOne.map(bankElement => {
+          return <KeypadKey bankElement={bankElement} playAudio={props.playAudio}/>
+        }
     )
 }
 

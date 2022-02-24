@@ -1,8 +1,11 @@
 //import './App.css';
+import React, { useState } from 'react';
 import DrumMachine from './DrumMachine';
 import ReactFCCtest from 'react-fcctest';
 
 function App() {
+
+  const [soundText, setSoundText] = useState(" ");
 
   const playAudio = (key) => {
     console.log("you clicked me");
@@ -17,7 +20,7 @@ function App() {
   return (
     <div>
       <ReactFCCtest />
-      <DrumMachine playAudio={playAudio}/>
+      <DrumMachine setSoundText={setSoundText} soundText={soundText} playAudio={playAudio}/>
     </div>
   );
 }

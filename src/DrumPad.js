@@ -118,7 +118,7 @@ const bankTwo = [
 
 export default function DrumPad(props) {
     return bankOne.map(bankElement => {
-          return <KeypadKey bankElement={bankElement} playAudio={props.playAudio}/>
+          return <KeypadKey setSoundText={props.setSoundText} bankElement={bankElement} playAudio={props.playAudio}/>
         }
     )
 }

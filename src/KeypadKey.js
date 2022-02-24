@@ -3,11 +3,13 @@ import React, { useEffect } from 'react';
 
 export default function KeypadKey(props) {
     //am I adding event lsitener for each keypadKey compononent?
-    
+
+
     const handleKeydown = (event) => {
         if(event.keyCode === props.bankElement.keyCode){
             console.log("you clicked key:", event.keyCode);
             props.playAudio(props.bankElement.keyTrigger);
+            props.setSoundText(props.bankElement.id);
         }
         
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import KeypadKey from './KeypadKey';
-//import './drumPad.css';
+import './drumPad.css';
 
 const bankOne = [
   {
@@ -117,9 +117,12 @@ const bankTwo = [
 ];
 
 export default function DrumPad(props) {
-    return bankOne.map(bankElement => {
+  return (
+  <div id="drum-pad-wrapper">
+    {bankOne.map(bankElement => {
           return <KeypadKey setSoundText={props.setSoundText} bankElement={bankElement} playAudio={props.playAudio}/>
-        }
+        })}
+    </div>
     )
 }
 

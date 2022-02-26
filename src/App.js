@@ -5,7 +5,7 @@ import ReactFCCtest from 'react-fcctest';
 
 function App() {
 
-  const [soundText, setSoundText] = useState(" ");
+  const [soundText, setSoundText] = useState("          ");
 
   //function takes in the key (id of audio element which is set to keytrigger property from the array of objects)
   //and also the text of the sound (this is the id property from the array of objects) 

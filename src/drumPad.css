@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    height: 90%;
+    height: 80%;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .drum-pad {

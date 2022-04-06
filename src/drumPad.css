@@ -16,3 +16,12 @@
     background-image: linear-gradient(to right bottom, #000206, #191e20, #2b3433, #434b46, #5f6259);
     color: white;
 }
+
+.clicked {
+    border: 4px inset white !important; /* in order to override hover style */
+}
+
+.drum-pad:hover {
+    border: 1px inset white;
+}
+

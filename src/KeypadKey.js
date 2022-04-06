@@ -10,6 +10,7 @@ export default function KeypadKey(props) {
             props.playAudio(props.bankElement.keyTrigger, props.bankElement.id);
             console.log("event is", event);
             
+            
         }
         
     }

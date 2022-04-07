@@ -1,8 +1,9 @@
 #drum-machine {
     margin: 0 auto;
     border: solid 2px black;
-    height: 50vh;
+    height: 70vh;
     max-width: 60%;
+    min-width: 60%;
     background: black;
     
 

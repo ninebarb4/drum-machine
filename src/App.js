@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 import React, { useState } from 'react';
 import DrumMachine from './DrumMachine';
 import ReactFCCtest from 'react-fcctest';
@@ -14,6 +14,7 @@ function App() {
     const audioElement = document.getElementById(key);
     const buttonElement = document.getElementById(text);
 
+    //add a class to element to blink when clicked for 100
     let timeout;
 
     const removeClicked = () => {
@@ -29,7 +30,7 @@ function App() {
     audioElement.play();
     //also update the display text
     setSoundText(text);
-    //add a class to element to blink when clicked
+    
     clicked();
      
     
@@ -37,7 +38,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="machine-wrapper">
       <ReactFCCtest />
       <DrumMachine setSoundText={setSoundText} soundText={soundText} playAudio={playAudio}/>
     </div>

@@ -11,13 +11,14 @@
 }
 
 #display {
-    color: white;
+    color: black;
     text-align: center;
-    min-height: 20px;
-    max-width: 25%;
-    background-color: red;
+    min-height: 30px;
+    max-width: 50%;
+    background-color: #dedbd3;
     display: block;
     margin: 0 auto;
+    font-size: 1.5em;
     
     
 }

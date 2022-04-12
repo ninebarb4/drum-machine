@@ -1,10 +1,13 @@
 #drum-pad-wrapper {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 95px 95px 95px;
+    grid-template-rows: 95px 95px 95px;
     grid-gap: 10px;
-    height: 80%;
+    
     padding: 10px;
-    margin-bottom: 20px;
+    
+    box-sizing: border-box;
+    width: 330px;
 }
 
 .drum-pad {

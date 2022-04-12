@@ -13,11 +13,13 @@ export default function DrumMachine(props) {
     return (
         <div id="drum-machine">
             <DrumPad setSoundText={props.setSoundText} playAudio={props.playAudio}/>
-            <div id="display">
-                {props.soundText}
-            </div>
-            <div>
-                <BankSwitch />
+            <div id="controls">
+                <div id="display">
+                    {props.soundText}
+                </div>
+                <div id="switch">
+                    <BankSwitch />
+                </div>
             </div>
         </div>
     )

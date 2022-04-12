@@ -1,12 +1,10 @@
 #drum-machine {
     margin: 0 auto;
-    border: solid 2px black;
-    height: 70vh;
-    max-width: 60%;
-    min-width: 60%;
+    border: solid 10px red;
+    /*height: 90vh;*/
+    width: 600px;
     background: black;
-    
-
+    display: flex;
     
 }
 
@@ -14,11 +12,31 @@
     color: black;
     text-align: center;
     min-height: 30px;
-    max-width: 50%;
+    
     background-color: #dedbd3;
     display: block;
-    margin: 0 auto;
+    
     font-size: 1.5em;
+    border:3px inset #706e6e;
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+      
+}
+
+#switch {
     
+    border:3px inset #706e6e;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+#controls {
+    width: 300px;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

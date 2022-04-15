@@ -1,42 +1,56 @@
 #drum-machine {
     margin: 0 auto;
     border: solid 10px red;
-    /*height: 90vh;*/
     width: 600px;
     background: black;
-    display: flex;
-    
+    display: flex; 
 }
 
 #display {
     color: black;
     text-align: center;
-    min-height: 30px;
-    
+    height: 46px;
     background-color: #dedbd3;
     display: block;
-    
-    font-size: 1.5em;
+    box-sizing: border-box;
+    padding: 2px;
     border: 2px inset red;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     background-color: white;
-      
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #switch {
-    
     border: 2px inset red;
     display: block;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     background-color: white;
+    box-sizing: border-box;
+    padding: 2px;
+    
 }
 
 #controls {
     width: 300px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 660px) {
+    
+        #drum-machine {
+            width: 330px;
+            flex-wrap: wrap;
+        }
+        #display, #switch {
+            margin: 10px auto;
+        }
+        #controls {
+            margin: 0 auto;
+        }
+  }

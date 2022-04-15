@@ -36,3 +36,10 @@ button:focus {
     background-image: linear-gradient(to left bottom, #000206, #191e20, #2b3433, #434b46, #5f6259);
 }
 
+@media only screen and (max-width: 660px) {
+    
+    #drum-pad-wrapper {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
